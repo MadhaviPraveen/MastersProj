@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Question Options Creation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href= "css/styles.css" rel="stylesheet" type ="text/css" >
+        <!--<style>
+            #optionCreation.hidden, #optionCreations.hidden{
+               display: none;
+            }
+        </style>-->
+        <script src="scripts/jquery-3.1.1.min.js"></script>
+        <script src="scripts/variables.js"></script>
+        <script src="scripts/question-option-creation.js"></script>
+    </head>
+    <body>
+        <h1><span> Intelligent Teaching System </span></h1>
+        <div id="content-holder">
+            <div id="content-holder">
+                <nav>
+                    <ul>
+<!--                        <li><a href="class-creation.html"> Create Class </a></li>
+                        <li><a href="question-option-creation.html"> Create Test </a></li>
+                        <li><a href="students-class.html"> Students To Class </a></li>                    
+                        <li><a href="tests-class.html"> Tests To Class </a></li>-->
+                        <li><a href=""> Create Class </a></li>
+                        <li><a href=""> Create Test </a></li>
+                        <li><a href=""> Students To Class </a></li>                    
+                        <li><a href=""> Tests To Class </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="container">
+            <form id="questionForm">
+                <div style="" id="formFieldsHolder">
+                    <div id="testHolder">
+                        <label for="test"> Test Name</label>
+                        <input type="text" id="test" name="test">
+                        <input type="button" value="Add question" id="add-question" onClick="javascript:addQuestionAndOption();">
+                        <input type="button" id="addTest" value="Submit" onClick="javascript:gatherInfoOnSubmit();">
+                    </div>
+                </div>
+            </form> 
+            <div id="questionOptionCreation-msg"></div>
+            </div>
+        </div>
+    </body>
+</html>
